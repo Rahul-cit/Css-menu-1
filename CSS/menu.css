@@ -1,0 +1,70 @@
+
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: black;
+    width: 750px;
+    margin: auto;
+    padding: 0px;
+    display: block;
+    
+}
+nav ul h2{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;
+   
+}
+nav ul li{
+    display: inline-block;
+    padding: 15px 25px;
+}
+nav ul h2{
+    display: inline-block;
+    margin-right: 70px;
+    color: orange;
+}
+nav{
+    width: 1000px;
+}
+nav ul li a{
+    display: inline-block;
+    color: white;
+    font-family: arial;
+    position: relative;
+    z-index: 1;
+
+}
+nav ul button{
+    color: black;
+    background-color: yellow;
+  
+    border-radius: 10px;
+    
+}
+nav{
+    box-sizing: border-box;
+    width: 950px;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s;
+  
+   
+}
+nav ul li:hover a::after{
+    width: 100%;
+}
+
+
+
+
